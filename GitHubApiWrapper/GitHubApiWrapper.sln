@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubApiWrapper.Test", "GitHubApiWrapper.Test\GitHubApiWrapper.Test.csproj", "{242E8E8E-519B-46E5-A89A-3F76C9769667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitHubApiWrapper", "GitHubApiWrapper\GitHubApiWrapper.csproj", "{78A48C72-126B-4EBE-90C5-D7017E18FF8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242E8E8E-519B-46E5-A89A-3F76C9769667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242E8E8E-519B-46E5-A89A-3F76C9769667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242E8E8E-519B-46E5-A89A-3F76C9769667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242E8E8E-519B-46E5-A89A-3F76C9769667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A48C72-126B-4EBE-90C5-D7017E18FF8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A48C72-126B-4EBE-90C5-D7017E18FF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A48C72-126B-4EBE-90C5-D7017E18FF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A48C72-126B-4EBE-90C5-D7017E18FF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
