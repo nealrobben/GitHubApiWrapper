@@ -11,19 +11,15 @@ namespace GitHubApiWrapper.Test
     class Program
     {
         private const string UserAgent = @"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko";
+        private const string AcceptHeader = @"text/html, application/xhtml+xml, */*";
 
         static void Main(string[] args)
         {
-            HttpWebRequest loginRequest = (HttpWebRequest)WebRequest.Create("https://api.github.com/users/nealrobben");
-            loginRequest.UserAgent = UserAgent;
-            loginRequest.Method = "Get";
-            loginRequest.Accept = @"text/html, application/xhtml+xml, */*";
-            loginRequest.AllowAutoRedirect = false;
 
-            var httpresp2 = (HttpWebResponse)loginRequest.GetResponse();
-            StreamReader reader2 = new StreamReader(httpresp2.GetResponseStream());
-            string responseContent = reader2.ReadToEnd();
-            Console.WriteLine(responseContent);
+            GitHubApiWrapper wrapper = new GitHubApiWrapper();
+            User usr = wrapper.GetUser("nealrobben");
+
+            Console.WriteLine(usr);
             Console.ReadLine();
 
         }
