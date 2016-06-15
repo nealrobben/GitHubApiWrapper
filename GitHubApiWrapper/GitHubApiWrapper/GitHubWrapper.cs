@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GitHubApiWrapper
 {
-    public class GitHubWrapper
+    public class GitHubWrapper : IGitHubWrapper
     {
         private const string UserAgent = @"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko";
         private const string AcceptHeader = @"text/html, application/xhtml+xml, */*";
