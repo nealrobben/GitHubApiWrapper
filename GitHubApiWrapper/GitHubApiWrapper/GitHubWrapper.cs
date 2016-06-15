@@ -16,10 +16,8 @@ namespace GitHubApiWrapper
 
         public User GetUser(string userName)
         {
-            string userJson = GetUserInfo(userName);
-            User usr = ParseUser(userJson);
-
-            return usr;
+            var userWrapper = new UserWrapper(AcceptHeader, UserAgent);
+            return userWrapper.GetUser(userName);
         }
 
         public IList<Repository> GetRepositoriesForUser(User user)
@@ -31,32 +29,6 @@ namespace GitHubApiWrapper
         {
             var repositoryWrapper = new RepositoryWrapper(AcceptHeader, UserAgent);
             return repositoryWrapper.GetRepositoriesForUser(username);
-        }
-
-        private string GetUserInfo(string userName)
-        {
-            try
-            {
-                HttpWebRequest loginRequest = (HttpWebRequest)WebRequest.Create("https://api.github.com/users/" + userName);
-                loginRequest.UserAgent = UserAgent;
-                loginRequest.Method = "Get";
-                loginRequest.Accept = AcceptHeader;
-                loginRequest.AllowAutoRedirect = false;
-
-                var httpresp2 = (HttpWebResponse)loginRequest.GetResponse();
-                StreamReader reader2 = new StreamReader(httpresp2.GetResponseStream());
-                return reader2.ReadToEnd();
-            }
-            catch (Exception)
-            {
-                throw new ArgumentException("Invalid username");
-            }
-        }
-
-        private User ParseUser(string json)
-        {
-            UserJson usr = JsonConvert.DeserializeObject<UserJson>(json);
-            return new User(usr);
         }
 
     }
