@@ -11,7 +11,6 @@ namespace GitHubApiWrapper
     /// </summary>
     public class Repository
     {
-
         public string Name { get; private set; }
         public string FullName { get; private set; }
         public string Description { get; private set; }
