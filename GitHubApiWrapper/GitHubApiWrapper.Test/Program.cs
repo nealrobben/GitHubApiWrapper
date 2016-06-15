@@ -12,7 +12,7 @@ namespace GitHubApiWrapper.Test
     {
         static void Main(string[] args)
         {
-            GitHubApiWrapper wrapper = new GitHubApiWrapper();
+            GitHubWrapper wrapper = new GitHubWrapper();
             User usr = wrapper.GetUser("nealrobben");
 
             Console.WriteLine(usr);

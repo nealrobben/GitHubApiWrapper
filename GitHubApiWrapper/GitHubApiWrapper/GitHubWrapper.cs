@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace GitHubApiWrapper
 {
-    public class GitHubApiWrapper
+    public class GitHubWrapper
     {
         private const string UserAgent = @"Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko";
         private const string AcceptHeader = @"text/html, application/xhtml+xml, */*";
@@ -20,6 +20,17 @@ namespace GitHubApiWrapper
             User usr = ParseUser(userJson);
 
             return usr;
+        }
+
+        public IList<Repository> GetRepositoriesForUser(User user)
+        {
+            return GetRepositoriesForUser(user.Login);
+        }
+
+        public IList<Repository> GetRepositoriesForUser(string username)
+        {
+            //TODO: implement
+            return new List<Repository>();
         }
 
         private string GetUserInfo(string userName)
