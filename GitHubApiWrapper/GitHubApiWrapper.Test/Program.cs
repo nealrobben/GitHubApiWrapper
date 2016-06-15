@@ -15,6 +15,9 @@ namespace GitHubApiWrapper.Test
             GitHubWrapper wrapper = new GitHubWrapper();
             User usr = wrapper.GetUser("nealrobben");
 
+            var repos = wrapper.GetRepositoriesForUser("nealrobben");
+            Console.WriteLine(repos);
+
             Console.WriteLine(usr);
             Console.ReadLine();
         }

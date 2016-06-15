@@ -141,5 +141,10 @@ namespace GitHubApiWrapper
         public DateTime CreatedAt { get; private set; }
         public DateTime UpdatedAt { get; private set; }
 
+        public override string ToString()
+        {
+            return Name;
+        }
+
     }
 }
