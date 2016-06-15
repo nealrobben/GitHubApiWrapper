@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GitHubApiWrapper
 {
-    internal class RepositoryJson
+    public class RepositoryJson
     {
         public string Name { get;  set; }
         public string FullName { get;  set; }
