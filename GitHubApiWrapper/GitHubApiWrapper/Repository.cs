@@ -10,7 +10,7 @@ namespace GitHubApiWrapper
     /// <summary>
     /// A single GitHub repository
     /// </summary>
-    public class Repository
+    public class Repository : IRepository
     {
         public Repository(RepositoryJson repository)
         {

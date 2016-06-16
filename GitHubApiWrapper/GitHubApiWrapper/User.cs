@@ -12,7 +12,7 @@ namespace GitHubApiWrapper
     /// <summary>
     /// A single GitHub User
     /// </summary>
-    public class User
+    public class User : IUser
     {
         public User(UserJson userJson)
         {

@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="GitHubWrapper.cs" />
     <Compile Include="IGitHubWrapper.cs" />
+    <Compile Include="IRepository.cs" />
+    <Compile Include="IUser.cs" />
     <Compile Include="Json\RepositoryJson.cs" />
     <Compile Include="Wrappers\RepositoryWrapper.cs" />
     <Compile Include="User.cs" />
