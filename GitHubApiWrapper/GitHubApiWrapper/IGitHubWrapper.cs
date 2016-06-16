@@ -4,8 +4,8 @@ namespace GitHubApiWrapper
 {
     public interface IGitHubWrapper
     {
-        IList<Repository> GetRepositoriesForUser(User user);
-        IList<Repository> GetRepositoriesForUser(string username);
-        User GetUser(string userName);
+        IList<IRepository> GetRepositoriesForUser(User user);
+        IList<IRepository> GetRepositoriesForUser(string username);
+        IUser GetUser(string userName);
     }
 }

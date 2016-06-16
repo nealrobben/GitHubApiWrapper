@@ -21,7 +21,7 @@ namespace GitHubApiWrapper.Wrappers
             this._acceptheader = acceptheader;
         }
 
-        public User GetUser(string userName)
+        public IUser GetUser(string userName)
         {
             string userJson = GetUserInfo(userName);
             User usr = ParseUser(userJson);

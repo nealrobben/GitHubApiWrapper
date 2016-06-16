@@ -21,24 +21,24 @@ namespace GitHubApiWrapper.Wrappers
             this._acceptheader = acceptheader;
         }
 
-        public IList<Repository> GetRepositoriesForUser(User user)
+        public IList<IRepository> GetRepositoriesForUser(User user)
         {
             return GetRepositoriesForUser(user.Login);
         }
 
-        public IList<Repository> GetRepositoriesForUser(string username)
+        public IList<IRepository> GetRepositoriesForUser(string username)
         {
             //TODO: implement
             //return new List<Repository>();
             var repositoriesJson = GetRepositoryInfo(username);
-            IList<Repository> repositories = ParseRepositories(repositoriesJson);
+            IList<IRepository> repositories = ParseRepositories(repositoriesJson);
             return repositories;
         }
 
-        private IList<Repository> ParseRepositories(string repositoriesJson)
+        private IList<IRepository> ParseRepositories(string repositoriesJson)
         {
             List<RepositoryJson> repositories = JsonConvert.DeserializeObject<List<RepositoryJson>>(repositoriesJson);
-            var repositoriesList = new List<Repository>();
+            var repositoriesList = new List<IRepository>();
 
             foreach (var repositoryJson in repositories)
             {

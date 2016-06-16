@@ -13,7 +13,7 @@ namespace GitHubApiWrapper.Test
         static void Main(string[] args)
         {
             GitHubWrapper wrapper = new GitHubWrapper();
-            User usr = wrapper.GetUser("nealrobben");
+            IUser usr = wrapper.GetUser("nealrobben");
 
             var repos = wrapper.GetRepositoriesForUser("nealrobben");
             foreach(var repo in repos)

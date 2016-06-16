@@ -20,7 +20,7 @@ namespace GitHubApiWrapper
         /// </summary>
         /// <param name="userName"></param>
         /// <returns></returns>
-        public User GetUser(string userName)
+        public IUser GetUser(string userName)
         {
             var userWrapper = new UserWrapper(AcceptHeader, UserAgent);
             return userWrapper.GetUser(userName);
@@ -31,7 +31,7 @@ namespace GitHubApiWrapper
         /// </summary>
         /// <param name="user"></param>
         /// <returns></returns>
-        public IList<Repository> GetRepositoriesForUser(User user)
+        public IList<IRepository> GetRepositoriesForUser(User user)
         {
             return GetRepositoriesForUser(user.Login);
         }
@@ -41,7 +41,7 @@ namespace GitHubApiWrapper
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>
-        public IList<Repository> GetRepositoriesForUser(string username)
+        public IList<IRepository> GetRepositoriesForUser(string username)
         {
             var repositoryWrapper = new RepositoryWrapper(AcceptHeader, UserAgent);
             return repositoryWrapper.GetRepositoriesForUser(username);
