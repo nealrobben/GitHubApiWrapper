@@ -9,68 +9,68 @@ namespace GitHubApiWrapper.Json
     public class RepositoryJson
     {
         public string Name { get;  set; }
-        public string FullName { get;  set; }
+        public string full_name { get;  set; }
         public string Description { get;  set; }
         public bool Private { get;  set; }
         public bool Fork { get;  set; }
         public string Url { get;  set; }
-        public string HtmlUrl { get;  set; }
-        public string ArchiveUrl { get;  set; }
-        public string AssigneesUrl { get;  set; }
-        public string BlobsUrl { get;  set; }
-        public string BranchesUrl { get;  set; }
-        public string CloneUrl { get;  set; }
-        public string CollaboratorsUrl { get;  set; }
-        public string CommentsUrl { get;  set; }
-        public string CommitsUrl { get;  set; }
-        public string CompareUrl { get;  set; }
-        public string ContentsUrl { get;  set; }
-        public string ContributorsUrl { get;  set; }
-        public string DeploymentsUrl { get;  set; }
-        public string DownloadsUrl { get;  set; }
-        public string EventsUrl { get;  set; }
-        public string ForksUrl { get;  set; }
-        public string GitCommitsUrl { get;  set; }
-        public string GitRefsUrl { get;  set; }
-        public string GitTagsUrl { get;  set; }
-        public string GitUrl { get;  set; }
-        public string HooksUrl { get;  set; }
-        public string IssueCommentUrl { get;  set; }
-        public string IssueEventsUrl { get;  set; }
-        public string IssuesUrl { get;  set; }
-        public string KeysUrl { get;  set; }
-        public string LabelsUrl { get;  set; }
-        public string LanguagesUrl { get;  set; }
-        public string MergesUrl { get;  set; }
-        public string MilestonesUrl { get;  set; }
-        public string MirrorUrl { get;  set; }
-        public string NotificationsUrl { get;  set; }
-        public string PullsUrl { get;  set; }
-        public string ReleasesUrl { get;  set; }
-        public string SshUrl { get;  set; }
-        public string StargazersUrl { get;  set; }
-        public string StatusesUrl { get;  set; }
-        public string SubscribersUrl { get;  set; }
-        public string SubscriptionUrl { get;  set; }
-        public string SvnUrl { get;  set; }
-        public string TagsUrl { get;  set; }
-        public string TeamsUrl { get;  set; }
-        public string TreesUrl { get;  set; }
+        public string html_url { get;  set; }
+        public string archive_url { get;  set; }
+        public string assignees_url { get;  set; }
+        public string blobs_url { get;  set; }
+        public string branches_url { get;  set; }
+        public string clone_url { get;  set; }
+        public string collaborators_url { get;  set; }
+        public string comments_url { get;  set; }
+        public string commits_url { get;  set; }
+        public string compare_url { get;  set; }
+        public string contents_url { get;  set; }
+        public string contributors_url { get;  set; }
+        public string deployments_url { get;  set; }
+        public string downloads_url { get;  set; }
+        public string events_url { get;  set; }
+        public string forks_url { get;  set; }
+        public string git_commits_url { get;  set; }
+        public string git_refs_url { get;  set; }
+        public string git_tags_url { get;  set; }
+        public string git_url { get;  set; }
+        public string hooks_url { get;  set; }
+        public string issue_comment_url { get;  set; }
+        public string issue_events_url { get;  set; }
+        public string issues_url { get;  set; }
+        public string keys_url { get;  set; }
+        public string labels_url { get;  set; }
+        public string languages_url { get;  set; }
+        public string merges_url { get;  set; }
+        public string milestones_url { get;  set; }
+        public string mirror_url { get;  set; }
+        public string notifications_url { get;  set; }
+        public string pulls_url { get;  set; }
+        public string releases_url { get;  set; }
+        public string ssh_url { get;  set; }
+        public string stargazers_url { get;  set; }
+        public string statuses_url { get;  set; }
+        public string subscribers_url { get;  set; }
+        public string subscription_url { get;  set; }
+        public string svn_url { get;  set; }
+        public string tags_url { get;  set; }
+        public string teams_url { get;  set; }
+        public string trees_url { get;  set; }
         public string Homepage { get;  set; }
         public string Language { get;  set; }
-        public int ForksCount { get;  set; }
-        public int StargazersCount { get;  set; }
-        public int WatchersCount { get;  set; }
+        public int forks_count { get;  set; }
+        public int stargazers_count { get;  set; }
+        public int watchers_count { get;  set; }
         public string Size { get;  set; }
-        public string DefaultBranch { get;  set; }
-        public int OpenIssuesCount { get;  set; }
-        public bool HasIssues { get;  set; }
-        public bool HasWiki { get;  set; }
-        public bool HasPages { get;  set; }
-        public bool HasDownloads { get;  set; }
-        public DateTime PushedAt { get;  set; }
-        public DateTime CreatedAt { get;  set; }
-        public DateTime UpdatedAt { get;  set; }
+        public string default_branch { get;  set; }
+        public int open_issues_count { get;  set; }
+        public bool has_issues { get;  set; }
+        public bool has_wiki { get;  set; }
+        public bool has_pages { get;  set; }
+        public bool has_downloads { get;  set; }
+        public DateTime pushed_at { get;  set; }
+        public DateTime created_at { get;  set; }
+        public DateTime updated_at { get;  set; }
 
         public override string ToString()
         {
