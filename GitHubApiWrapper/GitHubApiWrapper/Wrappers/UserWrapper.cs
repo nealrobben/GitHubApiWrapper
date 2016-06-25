@@ -13,7 +13,7 @@ namespace GitHubApiWrapper.Wrappers
     public class UserWrapper
     {
         private readonly string _acceptheader;
-        readonly string _useragent;
+        private readonly string _useragent;
 
         public UserWrapper(string acceptheader, string useragent)
         {

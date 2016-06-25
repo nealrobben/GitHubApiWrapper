@@ -12,16 +12,16 @@ namespace GitHubApiWrapper.Test
     {
         static void Main(string[] args)
         {
-            GitHubWrapper wrapper = new GitHubWrapper();
+            IGitHubWrapper wrapper = new GitHubWrapper();
             IUser usr = wrapper.GetUser("nealrobben");
 
             var repos = wrapper.GetRepositoriesForUser("nealrobben");
             foreach(var repo in repos)
             {
-                Console.WriteLine(repo);
+                Console.WriteLine(repo + " - " + repo.CreatedAt);
             }
 
-            Console.WriteLine(usr);
+            //Console.WriteLine(usr);
             Console.ReadLine();
         }
     }

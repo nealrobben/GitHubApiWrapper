@@ -13,7 +13,7 @@ namespace GitHubApiWrapper.Wrappers
     public class RepositoryWrapper
     {
         private readonly string _acceptheader;
-        readonly string _useragent;
+        private readonly string _useragent;
 
         public RepositoryWrapper(string acceptheader, string useragent)
         {
@@ -28,8 +28,6 @@ namespace GitHubApiWrapper.Wrappers
 
         public IList<IRepository> GetRepositoriesForUser(string username)
         {
-            //TODO: implement
-            //return new List<Repository>();
             var repositoriesJson = GetRepositoryInfo(username);
             IList<IRepository> repositories = ParseRepositories(repositoriesJson);
             return repositories;
